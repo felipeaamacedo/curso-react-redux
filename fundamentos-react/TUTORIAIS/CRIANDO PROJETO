@@ -1,0 +1,134 @@
+AULA 8 - EXIBINDO STRING NA TELA
+Para interagir com o DOM, ou seja o html é necessário usar o 'react-dom'
+
+ele tem uma função chamada 'render' que pede dois argumentos
+1. o que vai ser renderizado, ('Olá React!!')
+2. ONDE será renderizado, nesse caso, na pasta /public tem um arquivo index.html, que possui uma div com id 'root' e assim é usada a function do JS document.getElementById('root')
+
+CÓDIGO DA AULA
+
+import ReactDOM from 'react-dom' 
+const el = document.getElementById('root')
+ReactDOM.render('Olá React!!', el)
+
+
+
+AULA 9 - CONHECENDO JSX
+Na aula 8 a gente viu que o ReactDOM.render() aceita dois argumentos, (1) o que vai ser renderizado, (2) onde vai ser renderizado. E usamos uma string.
+
+Para usar tags JSX
+
+CODIGO DA AULA
+
+/index.js
+import ReactDOM from 'react-dom'
+import React from 'react' 
+ 
+const tag = <strong>Olá React dentro de variável vamos que vamos</strong>
+
+ReactDOM.render(
+    <div>
+        {/* Para poder inserir alguma variável/constante no texto, é necessário utilizar colocar entre chaves */}
+        { tag } 
+    </div>,
+    document.getElementById('root')
+)
+
+
+
+AULA 10 CARREGANDO CSS
+Criar um arquivo com o mesmo nome do arquivo em que vai ser referênciado, exemplo index.css para ser referenciado em index.js.
+
+Colocar o código em css como em qualquer aplicação web.
+
+EXEMPLO: 
+body{
+    background-color: #222;
+    color: white;
+}
+
+referenciar o arquivo no index.js usando o caminho relativo do arquivo, no caso:
+
+import './index.css'
+
+CÓDIGO DA AULA
+/index.css
+
+body{
+    background-color: #222;
+    color: white;
+}
+
+/index.js
+
+import ReactDOM from 'react-dom'
+import React from 'react' 
+import './index.css' 
+ 
+const tag = <strong>Olá React dentro de variável vamos que vamos</strong>
+
+ReactDOM.render(
+    <div>
+        {/* Para poder inserir alguma variável/constante no texto, é necessário utilizar colocar entre chaves */}
+        { tag } 
+    </div>,
+    document.getElementById('root')
+)
+
+
+AULA 11 CRIANDO O PRIMEIRO COMPONENTE #01
+o objetivo do React e o que faz ele ser altamente escalável, é o uso de componentes.
+
+para criar, primeiro organizamos o projeto, criando uma pasta em 
+
+/src/components/basicos
+
+as pastas /components e /components/basicos são criadas por nós para organizar.
+
+então criamos em /components/basicos o componente 'Primeiro.js'. Repare que por convensão, os componentes iniciam com letra maiúscula.
+
+a estrutura de um componente começa com o comando 'exports default' pois ele vai ser importado no arquivo principal, index.js.
+
+/src/components/basicos/Primeiro.js
+export default function Primeiro() {
+    return 'Primeiro Componente!!'
+}
+
+Para ser usado no arquivo principal, usamos o comando
+
+import NomeDoComponente from 'caminhoDoComponente'
+
+como no código:
+
+/src/index.js
+import './index.css' 
+
+import ReactDOM from 'react-dom'
+import React from 'react' 
+
+import Primeiro from './components/basicos/Primeiro'
+
+
+ReactDOM.render(
+    <div>
+        <Primeiro></Primeiro>
+    </div>,
+    document.getElementById('root')
+)
+
+AULA 12 PRIMEIRO COMPONENTE #02
+Caso seja utilizado comandos JSX nos componentes, precisamos usar importar o React também no componente, e não somente no arquivo principal.
+
+O componente é simplesmente uma função, que retorna um conteúdo geralmente em JSX. Antes do return a função pode fazer alguns processos/cálculos, e esses cálculos podem ser usados no JSX usando as chaves {}, como pode ser visto no exemplo:
+
+import React from 'react'
+
+export default function Primeiro() {
+    const msg = 'seja bem vindo(a)!'
+    return (   
+        <div>
+            <h2>Primeiro Componente</h2> 
+            <p>{ msg }</p>
+        </div>
+    )
+}
