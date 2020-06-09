@@ -132,3 +132,26 @@ export default function Primeiro() {
         </div>
     )
 }
+
+AULA 14 - PROPRIEDADES SÃO SOMENTE LEITURA
+Propriedades ou props, usadas nos componentes, são somente leitura. Caso seja necessário fazer algum trabalho com as propriedades, é necessário salvá-las em uma variável e somente depois trabalhar essa variável.
+
+AULA 15 - REACT FRAGMENTS
+Sempre que fizermos um componente, é indicado envolver com um <div>, caso não queira temos duas alternativas, o uso do fragments reduzido "<> </>" que não aceita atributos, ou do <React.Fragments> que aceita atributos
+
+CÓDIGO DA AULA
+import React from 'react'
+
+export default function Fragmento(props){
+    return (
+
+        // <> </> nesse modelo reduzido não aceita atributos a mais
+        // <React.Fragment></React.Fragment>  aceita atributos a mais.
+        <React.Fragment>
+            <h2>Fragmento</h2>
+            <p>Cuidado com esse erro!</p>
+        </React.Fragment>
+    )
+}
+
+
