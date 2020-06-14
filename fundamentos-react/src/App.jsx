@@ -14,11 +14,32 @@ import Aleatorio from './components/basicos/Aleatorio'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai.jsx'
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+
+            <Card titulo='#13 - Desafio MegaSena' color='green'>
+                <Mega qtde={8}></Mega>
+            </Card>
+
+            <Card titulo='#12 - Contador' color='#e63946'>
+                <Contador numeroInicial={100}></Contador>
+            </Card>
+
+            <Card titulo='#11 - Componente Controlado (Input)' color='#457b9d68'>
+                <Input></Input>
+            </Card>
+
+            <Card titulo='#10 - Comunicação Indireta' color='#2a9d8f'>
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
             <Card titulo='#09 - Comunicação direta' color='#8a9b68'>
                 <DiretaPai></DiretaPai>
             </Card>

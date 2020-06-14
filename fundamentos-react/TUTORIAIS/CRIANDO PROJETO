@@ -155,3 +155,14 @@ export default function Fragmento(props){
 }
 
 
+AULA 31 COMUNICAÇÃO INDIRETA
+o pai passa para o filho uma função, e o filho usa essa função através do props.Função para enviar informações para o componente pai
+
+AULA 32 COMPONENTE COM ESTADO
+estado de um componente é onde você armazena as propriedades que fazem parte do componente. Quando um estado muda, o componente re-renderiza
+
+Para trabalhar com estados no react, é necessário usar o React Rooks chamado {useState}
+
+a partir daí é usado um destructuring onde o primeiro valor da array é a propriedade, e o segundo o setPropriedade
+
+[nome, setNome] = useState(nome)
