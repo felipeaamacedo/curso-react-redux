@@ -1,0 +1,14 @@
+TOC TO-DO app
+
+BACKEND
+1 - Visão geral
+2 - Configuração e instalação
+3 - Configurando o Servidor com o Expree
+4 - Conexão com o banco de dados
+5 - ODM e Criação com o Banco de Dados
+6 - Mapeamento de Rotas
+7 - Testando a API (PostMan)
+8 - Habilitando o CORS
+9 - Iniciando o Backend com PM2
+
+
