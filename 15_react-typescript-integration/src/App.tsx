@@ -5,7 +5,8 @@ import Contador from "./components/Contador";
 function App() {
 	return (
 		<div className="App">
-			<Contador valorInicial={12345} />
+			<Contador valorInicial={1334} />
+			<Contador></Contador>
 		</div>
 	);
 }
