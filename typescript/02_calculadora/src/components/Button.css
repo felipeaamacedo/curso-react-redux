@@ -1,0 +1,31 @@
+.button {
+    font-size: 1.4rem;
+    background-color: rgb(51, 51, 51);
+    color: #eeeeee;
+    border: none;
+    outline: none;
+}
+
+.button.double {
+    grid-column: span 2;
+}
+
+.button.triple {
+    grid-column: span 3;
+}
+
+.button.clear {
+    background-color: rgb(88, 88, 88);
+}
+
+.button.operator {
+    background-color: darkcyan;
+}
+
+.button:active{
+    background-color: rgb(65, 65, 65);;
+}
+
+.button.operator:active{
+    background-color:rgb(0, 87, 87);
+}
