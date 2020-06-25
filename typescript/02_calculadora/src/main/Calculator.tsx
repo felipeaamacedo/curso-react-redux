@@ -10,6 +10,7 @@ interface State {
     values: number[],
     current: number
 }
+
 const initialState: State = {
     displayValue: '0',
     clearDisplay: false,
@@ -20,8 +21,6 @@ const initialState: State = {
 
 
 export default class Calculator extends Component {
-
-
     state = { ...initialState }
 
     constructor(props: State) {
@@ -47,7 +46,6 @@ export default class Calculator extends Component {
         const displayValue = currentValue + n
 
         this.setState({ displayValue, clearDisplay: false })
-
 
         if (n !== '.') {
             const i: number = this.state.current

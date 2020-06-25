@@ -1,0 +1,32 @@
+TOC
+47. Visão Geral
+48. Configuração e Instalação
+49. Configurando o Servidor com o express
+50. Conexão com o Banco de Dados
+51. 
+
+
+
+
+
+Criação do backend inicia com a criação do projeto json.
+
+npm init -y
+
+em seguida são instalados as dependências do backend.
+
+As dependências usadas são:
+
+npm i --save -E body-parser@1.15.2 express@4.14.0 mongoose@4.7.0 node-restful@0.2.5 pm2@2.1.5
+
+
+Outra dependências que será usada em modo de desenvolvimento é o
+
+npm i --save-dev -E nodemon@1.11.0
+
+
+
+INSTALAÇÃO DO MONGODB
+
+PASSO1. criar uma pasta chamada "data" na pasta raiz (linux é o /)
+PASSO2. criar uma pasta chamada "data/db"
