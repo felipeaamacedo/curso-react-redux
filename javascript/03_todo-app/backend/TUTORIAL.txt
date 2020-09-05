@@ -1,0 +1,21 @@
+This tutorial shows how to start the backend in order to run the application
+
+STEP1: start mongodb with 'sudo systemctl start mongod'
+
+STEP2: start application with one of below commands
+
+COMANDO PARA RODAR EM MODO DE DESENVOLVIMENTO
+npm run dev
+
+COMANDO PARA RODAR EM MODO PRODUÇÃO
+npm run prodution
+
+
+IF: If wants to check whether the application is running use the command
+"sudo systemctl status mongod"
+
+IF2: To stop mongodb uses the command 
+"sudo systemctl stop mongod"
+
+IF3: Sometimes it is needed to restart mongod to do so use the command
+"sudo systemctl restart mongod"
