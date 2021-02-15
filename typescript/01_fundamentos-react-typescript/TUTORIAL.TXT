@@ -1,4 +1,0 @@
-Esse tutorial tem como objetivo refazer o curso REACT+REDUX da COD3R explicando as diferenças entre usar o REACT normal com JavaScript e o REACT com TypeScript.
-
-RECURSOS TRANSIÇÃO JSX PARA TSX
-https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
