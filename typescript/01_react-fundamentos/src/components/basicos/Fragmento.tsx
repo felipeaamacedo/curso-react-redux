@@ -23,6 +23,7 @@ export default function Fragmento(){
         <div className='Fragment'>
            <h2>Fragmento</h2>
            <p>Cuidado com esse erro!</p>
+           <p>Se você tirar a tag div com <strong>className='Fragment'</strong> esse componente causará erro! </p>
         </div>
     )
 }
