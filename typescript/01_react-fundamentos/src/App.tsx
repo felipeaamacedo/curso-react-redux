@@ -15,7 +15,7 @@ export default () => {
                 nota={ 9.3 }
             />
             <Fragmento />
-            <Aleatorio /> 
+            <Aleatorio min={2} max={100}/> 
         </div>
     )
 }

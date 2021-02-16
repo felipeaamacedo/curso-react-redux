@@ -1,10 +1,23 @@
 import React, { ReactElement } from 'react'
 
-export default ():ReactElement=>{
-const RANDOM_NUM:number = 0
+interface IProps{
+    min:number;
+    max:number;
+}
+
+
+function randomNumber(min:number, max:number):number{
+    let randomNumber = min + Math.random()*(max-min) 
+    return randomNumber
+}
+
+export default (props:IProps):ReactElement=>{
+    let min:number = props.min
+    let max:number = props.max
     return(
         <div>
-            <h2> o número aleatório é <strong> { RANDOM_NUM } </strong></h2>
+            <h2>Componente Aleatorio</h2>
+            <p> o número aleatório é <strong> { randomNumber(min, max)} </strong></p>
         </div>
     )
 }
