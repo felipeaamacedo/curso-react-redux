@@ -9,13 +9,13 @@ export default () => {
         <div>
             <h1>Fundamentos React</h1>
             <Primeiro></Primeiro>
-            <ComParametro 
-                titulo='Situação do Aluno' 
-                aluno='Pedro Silva'
+            <ComParametro
+                titulo='Situação do Aluno'
+                aluno='Pedro da Silva'
                 nota={ 9.3 }
             />
             <Fragmento />
-            <Aleatorio min={2} max={100}/> 
+            <Aleatorio min={2} max={100}/>
         </div>
     )
 }
